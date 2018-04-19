@@ -10,7 +10,9 @@ Note: This file needs to be named ui-variables.less so other
 stylesheets can call `@import "ui-variables";` and reference it.
 */
 @import "ui-variables";
-
+@import "toolbar";
+@import "sidebar";
+@import "message-list";
 /*
 After changing variables to set a base for our theme, we can use
 specific, narrowly-scoped CSS rules to change other things. 
@@ -23,8 +25,8 @@ here, so you can use modern CSS like -webkit-filter and -webkit-mask-image
 (which is used to make most of the icons in the app styleable via a
 background color.)
 */
-.sheet-toolbar {
-  border-bottom: 1px solid @border-color-divider;
+
+.flexbox-handle-horizontal div {
   box-shadow: none;
 }
 
@@ -40,11 +42,6 @@ img.content-light {
 
 .mail-label {
   -webkit-filter: contrast(110%) brightness(85%);
-}
-
-#message-list .message-item-wrap .message-item-white-wrap {
-  box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.28),
-    0 1px 1.5px rgba(255, 255, 255, 0.08);
 }
 
 .thread-list .list-item:not(.unread):not(.selected):not(.focused) {

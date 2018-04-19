@@ -1,7 +1,7 @@
 {
-  "name": "theme-starter",
-  "title": "Starer Theme",
-  "displayName": "Starer Theme",
+  "name": "cobalt2",
+  "title": "Cobalt2",
+  "displayName": "Cobalt2",
   "theme": "ui",
   "version": "0.1.0",
   "description": "A great dark theme to start your own themes.",
